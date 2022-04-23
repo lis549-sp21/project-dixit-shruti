@@ -6,16 +6,55 @@
  background-repeat: no-repeat;
    } */
 
-   h2{
-    text-align: center;
+   
+.banner {
+    background-image: url(images/vegetables.jpeg);
+    height: 400px;
+background-size: cover;
+text-align: center;
+color: beige;
+font-size:x-large;
+}
+   h2, p{
+    text-align: left;
+    padding: 10px;
+    margin-left: 30px;
   }
-  .background_image {
+
+  .intext-citation {
+    margin-left: 30px
+  }
+
+  /*.background_image {
     width: 300px;
     height: 300px;
     mix-blend-mode: multiply;
     
-  } 
+  } */
 
+  table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head {
+height: 2rem;
+text-align: left;
+color: blue;
+background-color: #d3d3d3;
+border-collapse: collapse;
+}
+
+.image {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+td{
+    padding: 1.0em;
+    border-bottom: 1px solid #d3d3d3;
+}
   /*Recipes*/
   .Recipes {
     position: relative;
@@ -47,6 +86,19 @@
   li img{
       opacity: 0.5;
   }
-li img:hover{
-opacity: 1.0;
+li img{
+   max-width: 1600px;
+   max-height: 400px; 
+}
+
+.benefit_1 {
+    position: absolute;
+    top: 200px;
+    left: 50px; 
+}
+
+.benefit_2 {
+    position: absolute;
+    top: 700px;
+    left: 50px; 
 }

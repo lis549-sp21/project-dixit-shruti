@@ -76,7 +76,8 @@ td{
   }
 
   .Recipes img{
-      opacity: 0.5;   
+      opacity: 0.5;
+      width: 100%;   
   }
 
   .Recipes img:hover {

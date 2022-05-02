@@ -8,11 +8,12 @@
     <link rel="icon" 
       type="image/jpeg" 
       href="images/icon.jpeg">
+      <!--Will need to add a href link to fonts so that fonts get downloaded first and then applied, its like downloading a R package first before using it; get rid of &swap thing which is at the end of the URL
+    Find fonts in google fonts
+for font size, instead of using px, use em which is like a comparitive way of specifying font, compared to parent element. rem means compared to root element so compared to the general standard of the page.
+Look up CSS stuff on MDN website -->
     <link rel="stylesheet" href="style.css">
-</head>
 <body>
-    <h1>Recipes</h1>
-    <header>
 <nav> 
     <ul> 
     <!-- nav bar will be horizontal nav bar in css styling-->
@@ -22,11 +23,15 @@
     <li><a href="resources.html">Resources</a> </li>
     </ul>
 </nav>
+
+<header>
+    <div class="sub_banner" >
+        <h2>Recipes</h2>  
+    </div>
 </header>
 
 <main>
-<div class="row">
-    <div class="Recipes">
+    <Section class="recipes"> 
 
     <a href = "https://www.forksoverknives.com/recipes/amazing-grains/thai-rice-salad-bowls/" target="_blank">
         <div class="column">
@@ -58,8 +63,8 @@
         <figure> <img src ="images/Sweet-Potato-Bread.jpeg" alt="Sweet Potato Bread"> 
     <figcaption>Sweet Potato Bread</figcaption> </figure> </div></a>
 
-</div>
-</div>
+
+</Section>
 </main>
 <footer>
     <p>

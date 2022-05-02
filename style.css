@@ -6,24 +6,103 @@
  background-repeat: no-repeat;
    } */
 
-   
-.banner {
-    background-image: url(images/vegetables.jpeg);
-    height: 400px;
-background-size: cover;
-text-align: center;
-color: beige;
-font-size:x-large;
+   /* nav bar */
+
+   nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    color: beige;
+    background-color: rgb(239, 171, 239);
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+  }
+
+  nav li {
+    display: inline;
+    width: 200px;
+    padding: 6em;
+  }
+
+  nav a{
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
 }
-   h2, p{
-    text-align: left;
-    padding: 10px;
-    margin-left: 30px;
+
+nav a:hover{
+  color: beige;
+  transition: all 0.25s ease-out;
+
+}
+
+header {
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  background-image: url('images/leaf.jpeg');
+  background-size: cover;
+  text-align: center;
+}
+   
+
+/* banner 
+
+.banner {
+  background-image: url(images/leaf.jpeg);
+  padding-top: 5rem;
+  height: 400px;
+  background-size: cover;
+  text-align: center;
+  color: beige;
+  font-weight:500;
+}
+
+.sub_banner{
+  padding-top: 5rem;
+  background-size: cover;
+  background-color:cornflowerblue;
+  text-align: center;
+  color: beige;
+  font-weight:500;
+}*/
+
+/* main body */
+
+body{
+  font-family: 'Nunito Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  background-color: #e0e0e0;
+}
+h1, h2, h3 {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+}
+
+h1 {
+ font-size: 3.5rem; 
+font-weight: 500;
+}
+
+h2, h3 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+}
+
+
+h3, p {
+  text-align: left;
+  padding: 10px;
+  margin-left: 30px;
   }
 
   .intext-citation {
     margin-left: 30px
   }
+
+  
 
   /*.background_image {
     width: 300px;
@@ -41,9 +120,10 @@ font-size:x-large;
 .head {
 height: 2rem;
 text-align: left;
-color: blue;
+color:white;
 background-color: #d3d3d3;
 border-collapse: collapse;
+background-color:grey;
 }
 
 .image {
@@ -62,37 +142,66 @@ td{
     color: black;
   }
 
-  .column {
+  figcaption {
+    color: black;
+    text-align: center;
+  }
+
+  figcaption:hover{
+    color: purple;
+    transition: all 0.25s ease-out;
+    text-decoration: underline;
+  
+  }
+
+  /*Do not use float or position property (see this in chap 7- according to Joel Ross. Flexbox is better */
+
+ /* .column {
     float: left;
     width: 25%;
     padding: 10px;
   }
   
-  /* Clear floats after image containers */
+  /* Clear floats after image containers and probably add a flex property for the cards
   .row::after {
     content: "";
     clear: both;
     display: table;
+  }*/
+
+  .column{
+    display: block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
   }
 
-  .Recipes img{
+  .recipes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+  }
+
+  .recipes img{
       opacity: 0.5;
-      width: 100%;   
+      width: 200px;  
   }
 
-  .Recipes img:hover {
+  .recipes img:hover {
     opacity: 1.0;
   }
   
-  li img{
-      opacity: 0.5;
-  }
+  
 li img{
    max-width: 1600px;
    max-height: 400px; 
+   opacity: 0.5;
 }
 
-.benefit_1 {
+li{
+  display: block;
+}
+
+/*.benefit1 {
     position: absolute;
     top: 200px;
     left: 50px; 
@@ -102,4 +211,18 @@ li img{
     position: absolute;
     top: 700px;
     left: 50px; 
+}*/
+
+/* footer */
+footer{
+  color: white;
+  background-color: brown;
 }
+ footer cite a {
+   color:black
+ }
+
+ footer cite a:hover{
+  color:white
+}
+

@@ -215,16 +215,8 @@ li{
 }*/
 
 /* footer */
-footer{
-  color: white;
-  background-color: lightskyblue;
-}
- footer cite a {
-   color:black
- }
-
- footer cite a:hover{
-  color:white
+footer p{
+  color: black;
 }
 
 button {

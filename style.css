@@ -155,6 +155,10 @@ td{
   
   }
 
+  .video{
+    margin-left: 5em;
+  }
+
   /*Do not use float or position property (see this in chap 7- Flexbox is better */
 
  /* .column {
@@ -176,10 +180,19 @@ td{
     margin-right: 0.5em;
   }
 
-  .recipes{
+  .link-recipes{
     display: flex;
     flex-wrap: wrap;
   }
+
+  .video-recipes{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+
 
 
   .recipes img{

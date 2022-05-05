@@ -126,9 +126,7 @@ h3, p {
 .head {
 height: 2rem;
 text-align: left;
-color:white;
-background-color: #d3d3d3;
-background-color:grey;
+color:black;
 }
 
 .image {
@@ -142,7 +140,6 @@ td{
 }
   /*Recipes*/
   .Recipes {
-    /*position: relative;*/
     display: flex;
     text-align: center;
     color: black;
@@ -179,19 +176,20 @@ td{
     display: table;
   }*/
 
-  .column{
+  /*.column{
     display: flex;
     margin-left: 0.5em;
     margin-right: 0.5em;
     flex-wrap: wrap;
     flex-grow: 1;
-  }
+  } */
 
   .link-recipes{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: auto;
     align-items: center;
+    flex-direction: row;
+    flex-basis: 50%;
   }
 
 .thai{
@@ -208,6 +206,7 @@ padding-right: 2em;
     padding-left: 1em;
     flex-direction: row;
     align-items: center;
+    flex-basis: 50%;
   }
 
 /* use flex direction: row and column to line cards properly */
@@ -251,7 +250,7 @@ footer p{
   color: black;
 }
 
-button {
+/*button {
   background-color: gray;
   border: none;
   color: black;
@@ -269,7 +268,7 @@ button {
 button:hover {
   background-color: plum;
   color: white;
-}
+} */
 
 
 /* Put media querry at the end of styling 
@@ -278,7 +277,7 @@ May need to add another min-width for cell phones.
 
 min-width: 768 px tablet
 min-width: 992 laptop
-min-wdth: 1400- large desktop */
+min-wdth: 1400- large desktop 
 
 
 @media (min-width: 768px) {
@@ -303,5 +302,4 @@ nav li {
     padding: 6em;
   }
 }
-
-}
+} */

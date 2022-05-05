@@ -21,7 +21,7 @@
   nav li {
     display: inline;
     width: 200px;
-    padding: 6em;
+    padding: 1.5em;
   }
 
   nav a{
@@ -36,6 +36,8 @@ nav a:hover{
   transition: all 0.25s ease-out;
 
 }
+
+
 
 header {
   color: white;
@@ -104,7 +106,9 @@ h3, p {
     margin-left: 30px
   }
 
-  
+  li{
+    margin-left: 30px;
+  }
 
   /*.background_image {
     width: 300px;
@@ -138,7 +142,8 @@ td{
 }
   /*Recipes*/
   .Recipes {
-    position: relative;
+    /*position: relative;*/
+    display: flex;
     text-align: center;
     color: black;
   }
@@ -175,29 +180,43 @@ td{
   }*/
 
   .column{
-    display: block;
+    display: flex;
     margin-left: 0.5em;
     margin-right: 0.5em;
+    flex-wrap: wrap;
+    flex-grow: 1;
   }
 
   .link-recipes{
     display: flex;
     flex-wrap: wrap;
+    flex-basis: auto;
+    align-items: center;
   }
 
+.thai{
+padding-right: 2em;
+}
+
+.mexican{
+  padding-right: 2em;
+  }
   .video-recipes{
     display: flex;
     flex-wrap: wrap;
     padding-right: 1em;
     padding-left: 1em;
+    flex-direction: row;
+    align-items: center;
   }
 
-
+/* use flex direction: row and column to line cards properly */
 
 
   .recipes img{
       opacity: 0.5;
       width: 200px;  
+      border-radius: 25px
   }
 
   .recipes img:hover {
@@ -205,14 +224,14 @@ td{
   }
   
   
-li img{
+/*li img{
    max-width: 1600px;
    max-height: 400px; 
    opacity: 0.5;
 }
 
 li{
-  display: block;
+  display: inline;
 }
 
 /*.benefit1 {
@@ -253,3 +272,36 @@ button:hover {
 }
 
 
+/* Put media querry at the end of styling 
+
+May need to add another min-width for cell phones. 
+
+min-width: 768 px tablet
+min-width: 992 laptop
+min-wdth: 1400- large desktop */
+
+
+@media (min-width: 768px) {
+nav li {
+  display: inline;
+  width: 200px;
+  padding: 3.5em;
+}
+@media (min-width: 992px) {
+  nav li {
+    display: inline;
+    width: 200px;
+    padding: 5em;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  nav li {
+    display: inline;
+    width: 200px;
+    padding: 6em;
+  }
+}
+
+}

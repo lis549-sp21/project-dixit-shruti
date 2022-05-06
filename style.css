@@ -1,12 +1,7 @@
-/*body,img {
-    background-image: url("images/background.png");
-    background-color: #e0c1c1;
-    margin-left: 2.5em;
-    background-size: cover;
- background-repeat: no-repeat;
-   } */
-
+/* index.html/ Home page */
    /* nav bar */
+
+   /* will try using java script and css here so that once window size is decreased, then the navbar can be drop down */
 
    nav {
     position: fixed; 
@@ -16,6 +11,7 @@
     color: beige;
     background-color: rgb(239, 171, 239);
     padding: 0.5rem 0.5rem 1rem 0.5rem;
+    z-index: 1000;
   }
 
   nav li {
@@ -37,10 +33,10 @@ nav a:hover{
 
 }
 
-
+/* header */
 
 header {
-  color: white;
+  color: beige;
   padding-top: 6rem;
   padding-bottom: 1rem;
   background-image: url('images/leaf.jpeg');
@@ -48,27 +44,6 @@ header {
   text-align: center;
 }
    
-
-/* banner 
-
-.banner {
-  background-image: url(images/leaf.jpeg);
-  padding-top: 5rem;
-  height: 400px;
-  background-size: cover;
-  text-align: center;
-  color: beige;
-  font-weight:500;
-}
-
-.sub_banner{
-  padding-top: 5rem;
-  background-size: cover;
-  background-color:cornflowerblue;
-  text-align: center;
-  color: beige;
-  font-weight:500;
-}*/
 
 /* main body */
 
@@ -92,7 +67,8 @@ h2, h3 {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 200;
+  font-weight: 500;
+  color: plum;
 }
 
 
@@ -110,12 +86,19 @@ h3, p {
     margin-left: 30px;
   }
 
-  /*.background_image {
-    width: 300px;
-    height: 300px;
-    mix-blend-mode: multiply;
-    
-  } */
+  .container-fluid{
+    margin-top: 2em;
+  }
+
+  .paragraph-6 img{
+    width: 50%;
+    margin: auto;
+    max-height: 500px;
+    max-width: 400px;
+  }
+
+
+/* Resources */
 
   table {
     width: 90%;
@@ -126,7 +109,9 @@ h3, p {
 .head {
 height: 2rem;
 text-align: left;
-color:black;
+color:rgb(101, 95, 95);
+font-weight: 600;
+font-size: 20px;
 }
 
 .image {
@@ -138,7 +123,9 @@ td{
     padding: 1.0em;
     border-bottom: 1px solid #d3d3d3;
 }
+
   /*Recipes*/
+
   .Recipes {
     display: flex;
     text-align: center;
@@ -161,36 +148,6 @@ td{
     margin-left: 5em;
   }
 
-  /*Do not use float or position property (see this in chap 7- Flexbox is better */
-
- /* .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
-  
-  /* Clear floats after image containers and probably add a flex property for the cards
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }*/
-
-  /*.column{
-    display: flex;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  } */
-
-  .link-recipes{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    flex-basis: 50%;
-  }
 
 .thai{
 padding-right: 2em;
@@ -199,6 +156,19 @@ padding-right: 2em;
 .mexican{
   padding-right: 2em;
   }
+
+  .link-recipes{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 1em;
+    padding-left: 1em;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 50%;
+    margin-top: 3em;
+  }
+
+
   .video-recipes{
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +179,7 @@ padding-right: 2em;
     flex-basis: 50%;
   }
 
-/* use flex direction: row and column to line cards properly */
+
 
 
   .recipes img{
@@ -248,6 +218,9 @@ li{
 /* footer */
 footer p{
   color: black;
+}
+footer{
+  margin-left: 2em;
 }
 
 /*button {
@@ -302,4 +275,7 @@ nav li {
     padding: 6em;
   }
 }
-} */
+} 
+
+-- Use Carousel for scroll through images
+USe collapse for collapsible buttons for references */

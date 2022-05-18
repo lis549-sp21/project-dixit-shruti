@@ -188,7 +188,7 @@ padding-right: 2em;
 
   .recipes img{
       opacity: 0.5;
-      width: 200px;  
+      width: 250px;  
       border-radius: 25px
   }
 
@@ -249,24 +249,9 @@ button:hover {
 
 
 @media (min-width: 768px) {
-nav a {
-  display: inline;
 
-  
 }
-@media (min-width: 992px) {
-  nav a {
-    display: inline;
-  
-
-  }
-}
-
 
 @media (min-width: 1400px) {
-  nav a {
-    display: inline;
-    font-size: 1.5rem;
-  }
-}
+ 
 } 

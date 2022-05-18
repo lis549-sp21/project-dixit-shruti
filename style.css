@@ -3,19 +3,18 @@
 
    /* will try using java script and css here so that once window size is decreased, then the navbar can be drop down */
 
-   nav {
-    position: fixed; 
+  nav {
     top: 0;
     left: 0;
     width: 100%; 
     color: beige;
     background-color: rgb(239, 171, 239);
     padding: 0.5rem 0.5rem 1rem 0.5rem;
-    z-index: 1000;
-  }
+    text-align: center;
+  } 
 
   nav li {
-    display: inline;
+    display: block;
     width: 200px;
     padding: 1.5em;
   }
@@ -23,15 +22,16 @@
   nav a{
     margin: 0;
     padding: 0;
-    color: black;
+    color: beige;
     text-decoration: none;
+    font-size: 18px;
 }
 
 nav a:hover{
-  color: beige;
+  color: gray;
   transition: all 0.25s ease-out;
 
-}
+} 
 
 /* header */
 
@@ -124,6 +124,10 @@ td{
     border-bottom: 1px solid #d3d3d3;
 }
 
+carousel-item img {
+width: fixed;
+height: fixed;
+}
   /*Recipes*/
 
   .Recipes {
@@ -244,38 +248,25 @@ button:hover {
 } */
 
 
-/* Put media querry at the end of styling 
-
-May need to add another min-width for cell phones. 
-
-min-width: 768 px tablet
-min-width: 992 laptop
-min-wdth: 1400- large desktop 
-
-
 @media (min-width: 768px) {
-nav li {
+nav a {
   display: inline;
-  width: 200px;
-  padding: 3.5em;
+
+  
 }
 @media (min-width: 992px) {
-  nav li {
+  nav a {
     display: inline;
-    width: 200px;
-    padding: 5em;
+  
+
   }
 }
 
 
 @media (min-width: 1400px) {
-  nav li {
+  nav a {
     display: inline;
-    width: 200px;
-    padding: 6em;
+    font-size: 1.5rem;
   }
 }
 } 
-
--- Use Carousel for scroll through images
-USe collapse for collapsible buttons for references */

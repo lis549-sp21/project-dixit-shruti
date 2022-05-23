@@ -95,6 +95,23 @@ p {
   max-width: 400px;
 }
 
+.youtubeContainer {
+  text-align: center;
+}
+
+.listContainer {
+  margin-left: 5em;
+}
+
+.listContainer2 {
+  margin-left: 3em;
+}
+
+.pageReferencesButton {
+  text-align: center;
+  padding: 20px;
+}
+
 /* Resources */
 
 table {

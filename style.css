@@ -68,7 +68,7 @@ h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: plum;
+  color: #950c95;
 }
 
 h3 {
@@ -80,6 +80,14 @@ p {
   text-align: justify;
 }
 
+a {
+  color: #950c95 !important;
+}
+
+a.nav-link {
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
 .intext-citation {
   margin-left: 30px;
 }
@@ -88,17 +96,38 @@ p {
   margin-top: 2em;
 }
 
-.carousel-section img {
-  width: 70%;
-  margin: auto;
-  max-height: 500px;
-  max-width: 400px;
+/* Home Page */ 
+
+/* Carousel for home page */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 0px solid black !important;
+  background-image: none !important;
 }
 
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: #950c95;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: #950c95;
+}
+
+/* Youtube video for home page */
 .youtubeContainer {
   text-align: center;
 }
 
+/* home page lists */
 .listContainer {
   margin-left: 5em;
 }
@@ -110,6 +139,35 @@ p {
 .pageReferencesButton {
   text-align: center;
   padding: 20px;
+}
+
+/* Modal Home Page */
+
+.modal-content a.btn.btn-outline-primary {
+  color: #950c95;
+  border-color: #950c95;
+}
+
+.modal-content button.btn.btn-primary {
+  color: #fff;
+  background-color: #950c95;
+  border-color: #950c95;
+}
+
+.carousel-section {
+  margin-top: 50px;
+}
+
+.carousel-section img {
+  width: 70%;
+  margin: auto;
+  max-height: 500px;
+  max-width: 400px;
+}
+
+carousel-item img {
+  width: fixed;
+  height: fixed;
 }
 
 /* Resources */
@@ -138,10 +196,27 @@ td {
   border-bottom: 1px solid #d3d3d3;
 }
 
-carousel-item img {
-  width: fixed;
-  height: fixed;
+#contactus {
+  margin-bottom: 25px;
 }
+
+#contactus h3,
+#contactus p {
+  text-align: center;
+}
+
+#contactus .submitButton {
+  text-align: center;
+}
+
+.feedbackFormContainer {
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+
 /*Recipes*/
 
 .Recipes {
@@ -160,7 +235,6 @@ figcaption:hover {
   transition: all 0.25s ease-out;
   text-decoration: underline;
 }
-
 
 .video-recipes {
   display: flex;
@@ -183,6 +257,13 @@ figcaption:hover {
 }
 
 
+/* Health Benefits Page */
+
+.health_benefits_container {
+  margin-right: 20px;
+  text-align: justify;
+}
+
 /* footer */
 footer p {
   color: black;
@@ -197,32 +278,6 @@ footer p {
   display: none;
 }
 
-/* carousel styling */
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after {
-  content: ">";
-  font-size: 55px;
-  color: rgb(248, 52, 248);
-}
-
-.carousel-control-prev-icon:after {
-  content: "<";
-  font-size: 55px;
-  color: rgb(248, 52, 248);
-}
-
-
 /* media queries */
 
 @media only screen and (min-width: 768px) {
@@ -234,4 +289,9 @@ footer p {
     display: block;
   }
 }
+
+.recipes img {
+  width: 100%;
+}
+
 

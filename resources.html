@@ -7,7 +7,7 @@
   <meta name="More information" content="More information of Vegan diet">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Being Vegan</title>
-  <link rel="icon" type="image/jpeg" href="images/icon.jpeg">
+  <link rel="icon" type="image/jpeg" href="favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -54,10 +54,12 @@
     </div>
   </nav>
 
+
   <header>
     <div class="banner"></div>
     <h1>Resources</h1>
   </header>
+
 
   <main>
     <section class="resources">
@@ -131,7 +133,7 @@
       </table>
 
 
-      <div class="carousel-section mobile-only" style="margin-top: 50px;">
+      <div class="carousel-section mobile-only">
         <!-- Code citation - https://getbootstrap.com/docs/4.0/components/carousel/  -->
         <div id="carouselExampleCaptions" class="carousel slide d-flex justify-content-center" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -205,12 +207,12 @@
 
     </section>
 
-    <section class="container" style="margin-bottom: 25px;" id="contactus">
-      <h3 style="text-align: center"> Additional questions?</h3>
+    <section class="container" id="contactus">
+      <h3> Additional questions?</h3>
 
-      <p style="text-align: center"> Please reach out by filling this form below:</p>
-      <div style="max-width: 600px; margin: auto; padding: 10px; border: 1px solid #000 ">
-        <form>
+      <p> Please reach out by filling this form below:</p>
+      <div class="feedbackFormContainer">
+        <form id="feedbackForm">
           <div class="form-group">
             <label for="nameInput">Your Name:</label>
             <input class="form-control" id="nameinput">
@@ -224,10 +226,11 @@
             <label for="email">Your question:</label>
             <input class="form-control" id="questioninput">
           </div>
-          <div style="text-align: center"><button type="submit" class="btn btn-outline-dark">Submit</button></div>
-
+          <div class="submitButton"><button type="submit" class="btn btn-outline-dark">Submit</button></div>
         </form>
       </div>
+
+
 
     </section>
   </main>

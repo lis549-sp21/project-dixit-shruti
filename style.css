@@ -5,8 +5,6 @@ nav {
   background-color: rgb(239, 171, 239);
 }
 
-
-
 /* header */
 
 header {
@@ -49,8 +47,8 @@ html {
 }
 
 body {
-  font-family: "Nunito Sans", "Arial", sans-serif !important;
-  font-size: 16px !important;
+  font-family: "Nunito Sans", "Arial", sans-serif ;
+  font-size: 16px ;
 }
 
 
@@ -74,12 +72,7 @@ h3 {
   color: #950c95;
 }
 
-@media only screen and (min-width: 768px) {
-  h2,
-  h3 {
-    color: #290e93 !important;
-  }
-}
+
 
 h3 {
   padding: 10px;
@@ -91,11 +84,11 @@ p {
 }
 
 a {
-  color: #950c95 !important;
+  color: #950c95;
 }
 
 a.nav-link {
-  color: rgba(0, 0, 0, 0.9) !important;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .intext-citation {
@@ -317,8 +310,15 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) {
+  h2,
+  h3 {
+    color: #290e93 ;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   nav {
-    background-color:beige !important;
+    background-color:beige;
   }
 }
 
@@ -346,8 +346,8 @@ footer p {
 
   @media only screen and (min-width: 768px) {
     body {
-      font-family: Roboto !important;
-      font-size: 20px !important;
+      font-family: Roboto;
+      font-size: 20px;
       background-color: rgb(241, 202, 241) !important;
     }
   }
